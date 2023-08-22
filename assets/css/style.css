@@ -65,6 +65,14 @@ input, button {
 /* ===== Header ===== */
 .header {
     margin-top: 42px;
+    padding: 20px 0 13px;
+    background: var(--white-color);
+}
+
+.header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 11;
 }
 
 .header-inner {
