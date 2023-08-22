@@ -32,6 +32,11 @@ ul li {
     list-style: none;
 }
 
+input, button {
+    border: none;
+    outline: none;
+}
+
 .container {
     width: 1140px;
     max-width: calc(100% - 48px);
@@ -89,7 +94,7 @@ ul li {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 1.75;
+    line-height: 1.75%;
 }
 
 .navbar-item__active{
@@ -101,7 +106,7 @@ ul li {
     content: "";
     position: absolute;
     left: 16px;
-    bottom: 6px;
+    bottom: 0;
     width: 47px;
     height: 1px;
     background: #7264D6;
@@ -116,4 +121,84 @@ ul li {
     margin-right: 28px;
     font-weight: 600;
     color: var(--primary-color);
+}
+
+/* ===== Hero ===== */
+.hero {
+    margin-top: 76px;
+    height: 100vh;
+    color: var(--secondary-color);
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content__subtitle {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75%; 
+    padding-left: 25px;
+}
+
+.hero-content__subtitle::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: var(--secondary-color);
+}
+
+.hero-content__heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 116.667%;
+}
+
+.hero-content__heading span {
+    color: #7264D6;
+}
+
+.hero-content__description {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height:  166.667%;
+}
+
+.hero-form {
+    margin-top: 40px;
+    position: relative;
+}
+
+.hero-form input {
+    width: 100%;
+    padding: 23px 200px 23px 23px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-form__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    background: #7264D6;
+}
+
+.hero-content__note {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 171.429%;
 }
