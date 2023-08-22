@@ -102,7 +102,7 @@ input, button {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 1.75%;
+    line-height: 175%;
 }
 
 .navbar-item__active{
@@ -131,28 +131,28 @@ input, button {
     color: var(--primary-color);
 }
 
-/* ===== service ===== */
-.service {
+/* ===== Hero ===== */
+.hero {
     margin-top: 76px;
+    height: calc(100vh - 195px);
     color: var(--secondary-color);
 }
 
-.service-item {
+.hero-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
 }
 
-.service-content__subtitle {
+.hero-content__subtitle {
     position: relative;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 1.75%; 
+    line-height: 175%; 
     padding-left: 25px;
 }
 
-.service-content__subtitle::before {
+.hero-content__subtitle::before {
     position: absolute;
     content: "";
     top: 50%;
@@ -164,8 +164,8 @@ input, button {
     background: var(--secondary-color);
 }
 
-.service-content__heading,
-.service-content__title  {
+.hero-content__heading {
+    width: 500px;
     margin-top: 12px;
     color: #212832;
     font-size: 6rem;
@@ -173,23 +173,25 @@ input, button {
     line-height: 116.667%;
 }
 
-.service-content__heading span {
+.hero-content__heading span {
     color: #7264D6;
 }
 
-.service-content__description {
+.hero-content__description {
+    width: 540px;
     margin-top: 20px;
     font-size: 1.8rem;
     font-weight: 400;
     line-height:  166.667%;
 }
 
-.service-form {
+.hero-form {
+    width: 540px;
     margin-top: 40px;
     position: relative;
 }
 
-.service-form input {
+.hero-form input {
     width: 100%;
     padding: 23px 200px 23px 23px;
     border-radius: 8px;
@@ -197,7 +199,7 @@ input, button {
     box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
 }
 
-.service-form__btn {
+.hero-form__btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -205,90 +207,14 @@ input, button {
     background: #7264D6;
 }
 
-.service-content__note {
+.hero-content__note {
     margin-top: 20px;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 171.429%;
 }
 
-/* ===== Service 2 ===== */
-.service-item__2nd {
-    margin-top: 160px;
-}
-
-.service-item__2nd .service-image,
-.service-item__4nd .service-image {
-    order: 1;
-}
-
-.service-item__2nd .service-content, 
-.service-item__4nd .service-content {
-    order: 2;
-}
-
-.service-content__title {
-    font-size: 4rem;
-    line-height: 125% ; 
-}
-
-.service-content__list {
-    margin-top: 70px;
-}
-
-.service-content__list > li {
-    color: #212832;
-    font-size: 2.2rem;
-    font-weight: 600;
-    line-height: 145.455%; 
-    margin-bottom: 30px;
-}
-
-.service-content__list > li > p {
-    color: var(--secondary-color);
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 175%;
-}
-
-/* ===== Service 3 ===== */
-.service-item__3nd,
-.service-item__4nd {
-    margin-top: 160px;
-}
-
-.service-content__description-3nd ,
-.service-content__description-4nd {
-    width: 470px;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 166.667%; 
-}
-
-.service-content__list-3nd ,
-.service-content__list-4nd {
-    margin-top: 28px;
-}
-
-.service-content__list-3nd li,
-.service-content__list-4nd li{
-    position: relative;
-    padding-left: 20px;
-    margin-top: 18px;
-}
-
-.service-content__list-3nd li::before ,
-.service-content__list-4nd li::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 12px;
-    height: 12px;
-    background: #7264D6;
-    border-radius: 50%;
-}
-
-.service-content__btn {
-    margin-top: 38px;
+.hero-image img {
+    display: block;
+    max-width: 570px;
 }
