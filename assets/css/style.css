@@ -224,32 +224,28 @@ button {
     max-width: 570px;
 }
 
-/* ===== Feature ===== */
-.feature {
-    width: calc(100% - 130px);
-}
-
-.feature-item {
+/* ===== How It Works ===== */
+.how-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 130px;
 }
 
-.feature-image {
+.how-image {
     width: 55%;
 }
 
-.feature-image img {
+.how-image img {
     display: block;
     max-width: 470px;
 }
 
-.feature-content {
+.how-content {
     width: 45%;
 }
 
-.feature-content__subtitle {
+.how-content__subtitle {
     position: relative;
     color: var(--primary-color);
     font-size: 1.6rem;
@@ -258,7 +254,7 @@ button {
     padding-left: 25px;
 }
 
-.feature-content__subtitle::before {
+.how-content__subtitle::before {
     position: absolute;
     content: "";
     width: 18px;
@@ -269,7 +265,7 @@ button {
     background: var(--primary-color);
 }
 
-.feature-content__title {
+.how-content__title {
     color: #212832;
     font-size: 4rem;
     font-weight: 700;
