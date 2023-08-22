@@ -123,20 +123,20 @@ input, button {
     color: var(--primary-color);
 }
 
-/* ===== Hero ===== */
-.hero {
+/* ===== service ===== */
+.service {
     margin-top: 76px;
     height: 100vh;
     color: var(--secondary-color);
 }
 
-.hero-inner {
+.service-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.hero-content__subtitle {
+.service-content__subtitle {
     position: relative;
     font-size: 1.6rem;
     font-weight: 400;
@@ -144,7 +144,7 @@ input, button {
     padding-left: 25px;
 }
 
-.hero-content__subtitle::before {
+.service-content__subtitle::before {
     position: absolute;
     content: "";
     top: 50%;
@@ -156,7 +156,7 @@ input, button {
     background: var(--secondary-color);
 }
 
-.hero-content__heading {
+.service-content__heading {
     margin-top: 12px;
     color: #212832;
     font-size: 6rem;
@@ -164,23 +164,23 @@ input, button {
     line-height: 116.667%;
 }
 
-.hero-content__heading span {
+.service-content__heading span {
     color: #7264D6;
 }
 
-.hero-content__description {
+.service-content__description {
     margin-top: 20px;
     font-size: 1.8rem;
     font-weight: 400;
     line-height:  166.667%;
 }
 
-.hero-form {
+.service-form {
     margin-top: 40px;
     position: relative;
 }
 
-.hero-form input {
+.service-form input {
     width: 100%;
     padding: 23px 200px 23px 23px;
     border-radius: 8px;
@@ -188,7 +188,7 @@ input, button {
     box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
 }
 
-.hero-form__btn {
+.service-form__btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -196,7 +196,7 @@ input, button {
     background: #7264D6;
 }
 
-.hero-content__note {
+.service-content__note {
     margin-top: 20px;
     font-size: 1.4rem;
     font-weight: 600;
