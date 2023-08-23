@@ -268,7 +268,8 @@ button {
 }
 
 .how-content__title,
-.feature-content__title {
+.feature-content__title,
+.testimonial-content__title {
     color: #212832;
     font-size: 4rem;
     font-weight: 700;
@@ -358,4 +359,117 @@ button {
 
 .feature-content__title-2nd {
     width: 470px;
+}
+
+/* ===== Testimonial ===== */
+.testimonial {
+    margin-top: 160px;
+}
+
+.testimonial-content {
+    text-align: center;
+}
+
+.testimonial-content__title {
+    margin-top: 12px;
+}
+
+.testimonial-content__desc {
+    width: 435px;
+    margin: 18px auto 0;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.testimonial-item {
+    margin-top: 70px;
+}
+
+.testimonial-item blockquote {
+    position: relative;
+    padding: 42px 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 154.545%;
+    background: var(--white-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.testimonial-item blockquote:hover {
+    border-color: #dfe2e8;
+}
+
+.testimonial-item blockquote::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+    border-width: 30px;
+    border-color: var(--white-color) transparent transparent transparent;
+    border-style: solid;
+}
+
+.testimonial-info {
+    padding-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonial-info__avatar {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-info__name {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 138.462%;
+}
+
+.testimonial-info__desc {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.carousels {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.carousel {
+    width: 20px;
+    padding: 2px;
+    background: var(--white-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.carousel-active {
+    background: #7264d6;
+    border-color: #7264d6;
 }
