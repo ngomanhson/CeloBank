@@ -12,6 +12,12 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
+        <!-- Loading -->
+        <div class="loader-overlay">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Header -->
         <header class="header header-sticky">
             <div class="container">
                 <div class="header-inner">
@@ -330,5 +336,17 @@
                 <p class="copyright-content">© 2020 Ligft Media All rights reserved.</p>
             </div>
         </footer>
+
+        <script>
+            window.addEventListener("load", () => {
+                const loader = document.querySelector(".loader-overlay");
+
+                loader.classList.add("loader-hidden");
+
+                loader.addEventListener("transitionend", () => {
+                    document.body.removeChild(loader);
+                });
+            });
+        </script>
     </body>
 </html>

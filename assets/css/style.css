@@ -74,6 +74,61 @@ button {
     overflow: hidden;
 }
 
+/* ===== Loading ===== */
+.loader-overlay {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 9999;
+}
+
+.loader {
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    position: relative;
+}
+
+.loader::after,
+.loader::before {
+    content: "";
+    box-sizing: border-box;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: loader 2s linear infinite;
+}
+
+.loader::after {
+    animation-delay: 1s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
 /* ===== Header ===== */
 .header {
     margin-top: 42px;
