@@ -568,3 +568,75 @@ button {
 .blog-item:hover .blog-content__link {
     color: #7264d6;
 }
+
+/* ===== CTA ===== */
+.cta {
+    margin-top: 160px;
+}
+
+.cta-inner {
+    position: relative;
+    padding: 100px 395px;
+    background: #7264d6;
+    border-radius: 24px;
+}
+
+.cta-decor {
+    position: absolute;
+}
+
+.cta-decor:nth-child(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.cta-decor:nth-child(2) {
+    top: 49px;
+    right: 112px;
+}
+
+.cta-decor:nth-child(3) {
+    bottom: 49px;
+    left: 166px;
+}
+
+.cta-decor:nth-child(4) {
+    right: 166px;
+    bottom: 49px;
+}
+
+.cta-content {
+    color: var(--white-color);
+    text-align: center;
+}
+
+.cta-content__subtitle {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.cta-content__title {
+    width: 402px;
+    margin-top: 12px;
+    color: var(--white-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.cta-content__desc {
+    width: 435px;
+    margin-top: 18px;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.cta-content__btn {
+    display: flex;
+    gap: 15px;
+    margin-top: 38px;
+}
