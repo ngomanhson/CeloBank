@@ -71,7 +71,7 @@ button {
 /* ===== Header ===== */
 .header {
     margin-top: 42px;
-    padding: 20px 0 13px;
+    padding: 20px 0 0;
     background: var(--white-color);
 }
 
@@ -289,7 +289,7 @@ button {
 
 .hero__percent {
     position: absolute;
-    top: 105px;
+    top: 127px;
     right: 0;
     width: 130px;
     height: 130px;
