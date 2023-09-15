@@ -354,9 +354,7 @@ button {
 
 .how__active {
     position: absolute;
-
-    left: 50%;
-    transform: translateX(50%);
+    right: -100px;
     bottom: 96px;
     display: flex;
     align-items: center;
