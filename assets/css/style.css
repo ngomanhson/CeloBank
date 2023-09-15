@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700;800&display=swap");
 
 * {
     margin: 0;
@@ -139,10 +139,11 @@ button {
 
 /* ===== Hero ===== */
 .hero {
-    margin-top: 76px;
+    margin: 76px 0 80px;
 }
 
-.hero__content-title {
+.hero__content-title,
+.how__content-title {
     color: #696d77;
     font-size: 1.6rem;
     font-weight: 400;
@@ -151,7 +152,8 @@ button {
     align-items: center;
 }
 
-.hero__content-title::before {
+.hero__content-title::before,
+.how__content-title::before {
     content: "";
     display: inline-block;
     width: 18px;
@@ -160,7 +162,8 @@ button {
     margin-right: 12px;
 }
 
-.hero__content-heading {
+.hero__content-heading,
+.how__content-heading {
     margin-top: 12px;
     color: var(--primary-color);
     font-size: 6rem;
@@ -213,4 +216,78 @@ button {
 .hero__media img {
     display: block;
     width: 100%;
+}
+
+/* ===== How It Works ===== */
+.how {
+    padding-top: 80px;
+}
+
+.how__media {
+    position: relative;
+}
+
+.how__media-img {
+    width: 100%;
+    display: block;
+}
+
+.how__decor {
+    position: absolute;
+    top: 76px;
+    right: 55px;
+}
+
+.how__content-heading {
+    padding-bottom: 40px;
+}
+
+.content__item {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 145.455%;
+    margin-top: 30px;
+}
+
+.content__item-desc {
+    margin-top: 16px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.how__active {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(50%);
+    bottom: 96px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fffdfa;
+    width: 226px;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.active__content {
+    margin-left: 10px;
+}
+
+.active__content-title {
+    color: var(--primary-color);
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.active__content-desc {
+    margin-top: 5px;
+    color: var(--secondary-color);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
