@@ -146,7 +146,8 @@ button {
 .how__content-title,
 .feature__content-title,
 .testimonial__content-title,
-.text__left-subtitle {
+.text__left-subtitle,
+.cta__content-title {
     color: #696d77;
     font-size: 1.6rem;
     font-weight: 400;
@@ -159,7 +160,8 @@ button {
 .how__content-title::before,
 .feature__content-title::before,
 .testimonial__content-title::before,
-.text__left-subtitle::before {
+.text__left-subtitle::before,
+.cta__content-title::before {
     content: "";
     display: inline-block;
     width: 18px;
@@ -321,7 +323,8 @@ button {
 .how,
 .feature,
 .testimonial,
-.blog {
+.blog,
+.cta {
     padding-top: 80px;
     margin-bottom: 80px;
 }
@@ -399,7 +402,8 @@ button {
 /* ===== Feature ===== */
 .feature__content-heading,
 .testimonial__content-heading,
-.text__left-title {
+.text__left-title,
+.cta__content-heading {
     color: var(--primary-color);
     font-size: 4rem;
     font-weight: 700;
@@ -703,4 +707,83 @@ button {
 
 .blog__item:hover .blog__content-link {
     color: #7264d6;
+}
+
+/* ===== CTA ===== */
+
+.cta__inner-decor {
+    position: absolute;
+}
+
+.cta__inner-decor:nth-child(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.cta__inner-decor:nth-child(2) {
+    top: 49px;
+    right: 112px;
+}
+
+.cta__inner-decor:nth-child(3) {
+    bottom: 49px;
+    left: 166px;
+}
+
+.cta__inner-decor:nth-child(4) {
+    bottom: 49px;
+    right: 166px;
+}
+
+.cta__inner {
+    position: relative;
+    padding: 100px 0;
+
+    background: #7264d6;
+    border-radius: 24px;
+}
+
+.cta__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cta__content {
+    text-align: center;
+}
+
+.cta__content-title,
+.cta__content-heading,
+.cta__content-desc {
+    color: var(--white-color);
+}
+
+.cta__content-title::before {
+    background: var(--white-color);
+}
+
+.cta__content-heading {
+    margin-top: 12px;
+}
+
+.cta__content-desc {
+    margin-top: 18px;
+    text-align: center;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+    max-width: 435px;
+}
+
+.cta__actions {
+    margin-top: 38px;
+}
+
+.cta__actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
