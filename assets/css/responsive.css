@@ -148,4 +148,50 @@
 }
 /* ===== Mobile ===== */
 @media screen and (max-width: 767px) {
+    .header {
+        margin-top: 0;
+    }
+
+    .hero {
+        margin: 40px 0 40px;
+    }
+
+    .hero__content-heading {
+        font-size: 5rem;
+    }
+
+    .hero__content-desc {
+        margin-top: 15px;
+    }
+
+    .header-action__btn {
+        display: none;
+    }
+
+    .hero__form {
+        width: 100%;
+    }
+
+    .cta__actions {
+        gap: 10px;
+    }
+
+    .cta__content-heading {
+        font-size: 3rem;
+    }
+
+    .cta__actions a img {
+        display: inline-block;
+        padding: 0 25px;
+        width: 100%;
+    }
+
+    .feature__media-card {
+        width: 100%;
+    }
+
+    .footer__form input {
+        max-width: 150px;
+        width: 100%;
+    }
 }
