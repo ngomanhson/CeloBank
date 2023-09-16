@@ -1,0 +1,151 @@
+:root {
+    --menu-drawer: all 0.5s ease;
+}
+
+/* ===== PC ===== */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* ===== Tablet & Mobile ===== */
+@media screen and (max-width: 991px) {
+    .header-action__link {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--menu-drawer);
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        padding: 60px;
+        background: #fff;
+        z-index: 12;
+        transform: translateX(-100%);
+        transition: var(--menu-drawer);
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        color: #696d76;
+        padding: 7px 0;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .navbar-item {
+        padding-left: 0;
+    }
+
+    .navbar-item__active,
+    .navbar-item__active::before {
+        display: none;
+    }
+
+    .navbar,
+    .hero__media,
+    .how__active,
+    .how__decor,
+    .cta__inner-decor {
+        display: none;
+    }
+
+    .how__content,
+    .feature__media,
+    .feature__content {
+        margin-top: 50px;
+    }
+
+    .how,
+    .feature,
+    .testimonial,
+    .blog,
+    .cta {
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .how__content {
+        order: 1;
+    }
+
+    .how__media {
+        order: 2;
+    }
+
+    .footer__list {
+        margin-bottom: 30px;
+    }
+}
+
+/* ===== Tablet ===== */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .hero__content {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .feature__media-card {
+        width: 100%;
+    }
+
+    .footer__form input {
+        max-width: 195px;
+    }
+
+    .income {
+        right: 165px;
+    }
+}
+/* ===== Mobile ===== */
+@media screen and (max-width: 767px) {
+}

@@ -78,13 +78,14 @@ button {
 .header-sticky {
     position: sticky;
     top: 0;
-    z-index: 11;
+    z-index: 1;
 }
 
 .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 12px 0;
 }
 
 .logo {
@@ -450,6 +451,14 @@ button {
 .feature__media {
     display: flex;
     position: relative;
+}
+
+.feature__media-card {
+    max-width: 482px;
+}
+
+.feature__media-img {
+    width: 100%;
 }
 
 .feature__send,

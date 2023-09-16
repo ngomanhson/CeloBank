@@ -32,21 +32,35 @@
 
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
+        <!-- Header PC -->
         <header class="header header-sticky">
             <div class="container">
                 <div class="header-inner">
+                    <!-- Tablet/Mobile menu-->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                filL="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
                     <!-- Logo -->
                     <div class="header-logo">
-                        <a href="/">
+                        <a href="#">
                             <img src="./assets/images/logo.png" alt="CeloBank" class="logo" />
                         </a>
                     </div>
+
                     <!-- Navbar -->
                     <nav class="navbar">
-                        <ul class="navbar-list">
+                        <ul class="navbar-list" id="pc-nav">
                             <li class="navbar-item"><a class="navbar-item__link navbar-item__active" href="/">Home</a></li>
                             <li class="navbar-item"><a class="navbar-item__link" href="#!">Products</a></li>
                             <li class="navbar-item"><a class="navbar-item__link" href="#!">Features</a></li>
@@ -63,11 +77,29 @@
             </div>
         </header>
 
+        <!-- Tablet/Mobile header -->
+        <header class="mobile-header">
+            <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <!-- Logo -->
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="CeloBank" />
+                </a>
+
+                <!-- Navigation -->
+                <ul id="mobile-nav"></ul>
+            </div>
+        </header>
+
         <!-- Hero -->
         <div class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
+                    <div class="col-lg-6 col-md-12 col-12">
                         <div class="hero__content">
                             <h3 class="hero__content-title">Digital Smart Wallet</h3>
                             <h1 class="hero__content-heading">Digital <span>Payment</span> For Everyone.</h1>
@@ -84,7 +116,7 @@
                             <p class="hero__content-note">*We’ll respect the inbox and never share your email.</p>
                         </div>
                     </div>
-                    <div class="col-lg-5 offset-lg-1 col-md-6 col-12">
+                    <div class="col-lg-5 offset-lg-1 col-md-12 col-12">
                         <div class="hero__media">
                             <img src="./assets/images/mobile.png" alt="Statistical" />
                             <div class="media__block">
@@ -133,7 +165,7 @@
 
                         <!-- <img src="./assets/icons/check.svg" alt="Bank icon" class="how__decor-check" /> -->
                     </div>
-                    <div class="col-lg-5 offset-2 col-md-12 col-12">
+                    <div class="col-lg-5 offset-lg-2 col-md-12 col-12">
                         <div class="how__content">
                             <h3 class="how__content-title">Digital Smart Wallet</h3>
                             <h2 class="how__content-heading">How It Works</h2>
@@ -182,7 +214,7 @@
 
                     <div class="col-lg-6 offset-lg-1 col-md-12 col-12">
                         <div class="feature__media">
-                            <img src="./assets/images/card.png" alt="Card" />
+                            <img src="./assets/images/card.png" alt="Card" class="feature__media-card" />
 
                             <div class="feature__send">
                                 <div class="send__block">
@@ -216,7 +248,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-12">
                         <div class="feature__media">
-                            <img src="./assets/images/feature-02.png" alt="..." />
+                            <img src="./assets/images/feature-02.png" alt="..." class="feature__media-img" />
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-1 col-md-12 col-12">
@@ -446,12 +478,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-6 col-6">
                         <div class="footer__contact">
                             <a href="mailto:email@gmail.com">email@gmail.com</a>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-6 col-6">
                         <div class="footer__contact">
                             <a href="tel:(123) 456-7890">(123) 456-7890</a>
                         </div>
@@ -462,5 +494,13 @@
                 <p class="copyright__content">© 2020 Ligft Media All rights reserved.</p>
             </div>
         </footer>
+
+        <script>
+            const pcNav = document.querySelector("#pc-nav");
+            const mobileNav = document.querySelector("#mobile-nav");
+
+            //Copy from PC nav -> Mobile nav
+            mobileNav.innerHTML = pcNav.innerHTML;
+        </script>
     </body>
 </html>
