@@ -144,7 +144,8 @@ button {
 
 .hero__content-title,
 .how__content-title,
-.feature__content-title {
+.feature__content-title,
+.testimonial__content-title {
     color: #696d77;
     font-size: 1.6rem;
     font-weight: 400;
@@ -155,7 +156,8 @@ button {
 
 .hero__content-title::before,
 .how__content-title::before,
-.feature__content-title::before {
+.feature__content-title::before,
+.testimonial__content-title::before {
     content: "";
     display: inline-block;
     width: 18px;
@@ -315,7 +317,9 @@ button {
 
 /* ===== How It Works ===== */
 .how,
-.feature {
+.feature,
+.testimonial,
+.blog {
     padding-top: 80px;
     margin-bottom: 80px;
 }
@@ -391,7 +395,8 @@ button {
 }
 
 /* ===== Feature ===== */
-.feature__content-heading {
+.feature__content-heading,
+.testimonial__content-heading {
     color: var(--primary-color);
     font-size: 4rem;
     font-weight: 700;
@@ -436,6 +441,7 @@ button {
 }
 
 .feature__media {
+    display: flex;
     position: relative;
 }
 
@@ -513,4 +519,106 @@ button {
     margin-top: 6px;
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+/* ===== Testimonial ===== */
+.testimonial__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.testimonial__content-heading {
+    margin-top: 12px;
+}
+
+.testimonial__content-desc {
+    margin-top: 18px;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+    max-width: 435px;
+}
+
+.testimonial__item {
+    margin-top: 70px;
+}
+
+.testimonial__item blockquote {
+    position: relative;
+    padding: 42px 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 154.545%;
+    background: var(--white-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+    transition: all 0.3s ease-in;
+}
+
+.testimonial__item blockquote:hover {
+    filter: drop-shadow(0px 22px 54px #dfe2e8);
+}
+
+.testimonial__item blockquote::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+    border-width: 30px;
+    border-color: var(--white-color) transparent transparent transparent;
+    border-style: solid;
+}
+
+.testimonial__info {
+    padding-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonial__info-avatar {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial__info-name {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 138.462%;
+}
+
+.carousels {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.carousel {
+    width: 20px;
+    padding: 2px;
+    background: var(--white-color);
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+}
+
+.carousel-active {
+    background: #7264d6;
+    border-color: #7264d6;
 }
