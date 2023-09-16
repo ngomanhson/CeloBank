@@ -145,7 +145,8 @@ button {
 .hero__content-title,
 .how__content-title,
 .feature__content-title,
-.testimonial__content-title {
+.testimonial__content-title,
+.text__left-subtitle {
     color: #696d77;
     font-size: 1.6rem;
     font-weight: 400;
@@ -157,7 +158,8 @@ button {
 .hero__content-title::before,
 .how__content-title::before,
 .feature__content-title::before,
-.testimonial__content-title::before {
+.testimonial__content-title::before,
+.text__left-subtitle::before {
     content: "";
     display: inline-block;
     width: 18px;
@@ -396,7 +398,8 @@ button {
 
 /* ===== Feature ===== */
 .feature__content-heading,
-.testimonial__content-heading {
+.testimonial__content-heading,
+.text__left-title {
     color: var(--primary-color);
     font-size: 4rem;
     font-weight: 700;
@@ -621,4 +624,83 @@ button {
 .carousel-active {
     background: #7264d6;
     border-color: #7264d6;
+}
+
+/* ===== Blog ===== */
+.blog__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text__left-title {
+    margin-top: 6px;
+}
+
+.text__left-desc {
+    max-width: 435px;
+    margin-top: 18px;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.blog__image > a > img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.blog__list {
+    margin-top: 70px;
+}
+
+.blog__item {
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 1px solid #dfe2e8;
+    background: var(--white-color);
+    transition: all 0.2s ease;
+}
+
+.blog__item:hover {
+    border-color: transparent;
+}
+
+.blog__content {
+    padding-left: 22px;
+}
+
+.blog__content-date {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 171.429%;
+}
+
+.blog__content-title {
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%;
+}
+
+.blog__content-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 162.5%;
+    transition: all 0.2s ease;
+}
+
+.blog__item:hover .blog__content-link {
+    color: #7264d6;
 }
