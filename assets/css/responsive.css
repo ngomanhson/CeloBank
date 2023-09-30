@@ -15,6 +15,14 @@
 
 /* ===== Tablet & Mobile ===== */
 @media screen and (max-width: 991px) {
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
     .header-action__link {
         display: none;
     }
